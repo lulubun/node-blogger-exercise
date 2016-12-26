@@ -4,7 +4,7 @@ const morgan = require('morgan');
 
 const app = express();
 
-const blogPostRouter = require('./blog-posts');
+const blogPostRouter = require('blogPostRouter');
 
 // log the http layer
 app.use(morgan('common'));
