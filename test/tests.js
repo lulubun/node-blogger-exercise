@@ -39,7 +39,7 @@ describe('BlogPosts', function() {
 	});
 
 	it('should add a blog post on POST', function() {
-    const newPost = {title: 'coffee', content: 'people like coffee', author: 'coffeeDrinkerPerson', publishDate: 'December 1, 2020'};
+    const newItem = {title: 'coffee', content: 'people like coffee', author: 'coffeeDrinkerPerson', publishDate: 'December 1, 2020'};
     return chai.request(app)
       .post('/blog-posts')
       .send(newItem)
